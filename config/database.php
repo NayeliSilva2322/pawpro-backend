@@ -22,9 +22,7 @@
                     $this->username,
                     $this->password
                 );
-
-                $this->conn->setAtribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+                $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $exception) {
                 echo "Error de conexion: ".$exception->getMessage(); 
             }
