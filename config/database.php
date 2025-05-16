@@ -2,12 +2,12 @@
 <?php
     /**
      * PDO es un manejador de objetos de PHP, consitente necesario para acceder a las bases de datos 
-     * usando PHP. Cada base de datos puede implementar PHP. Y agregar alguna fucnionalidad 
+     * usando PHP. Cada base de datos puede implementar PDO. Y agregar alguna fucnionalidad 
      * como una extension de alguna función.
      * https://www.php.net/manual/en/intro.pdo.php
      */
     class Database{
-        private $host = 'localhost';
+        private $host = "localhost";
         private $db_name = "pawpro_database";
         private $username = "root";
         private $password = "root123456";
